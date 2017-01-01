@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(PlayerController))]
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMotor : MonoBehaviour
 {
     /// <summary>
@@ -9,14 +9,17 @@ public class PlayerMotor : MonoBehaviour
     /// </summary>
     private PlayerController playerMotor;
 
-    private Rigidbody rb;
+    /// <summary>
+    /// 
+    /// </summary>
+    private Rigidbody2D rb;
 
     private void Awake()
     {
         //Esto se que siempre se cumplira porque requiero este componente
         //en la declaracion de la clase
         playerMotor = this.GetComponent<PlayerController>();
-        rb = this.GetComponent<Rigidbody>();   
+        rb = this.GetComponent<Rigidbody2D>();   
     }
 
     /// <summary>
@@ -24,6 +27,6 @@ public class PlayerMotor : MonoBehaviour
     /// </summary>
 	void FixedUpdate ()
     {
-        rb.AddForce(new Vector3(playerMotor.Velocity, 0, 0) * Time.deltaTime, ForceMode.Impulse);
+        rb.AddForce(new Vector3(playerMotor.Velocity, 0, 0) * Time.deltaTime, ForceMode2D.Impulse);
 	}
 }
