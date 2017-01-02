@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(PlayerMotor))]
+[RequireComponent(typeof(BoxCollider2D))]
 public class PlayerController : MonoBehaviour
 {
     /// <summary>
@@ -16,8 +17,19 @@ public class PlayerController : MonoBehaviour
     {
         get; private set;
     }
-	
-	void Update ()
+
+    private void Awake()
+    {
+        this.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2.0f, 0, this.transform.position.z));
+
+        BoxCollider2D bc_temp;
+
+        bc_temp = this.GetComponent<BoxCollider2D>();
+
+        this.transform.Translate(0, bc_temp.size.y + 1, 0);
+    }
+
+    void Update ()
     {
         Velocity = Input.GetAxis("Horizontal") * moveVelocity;
 	}
