@@ -27,6 +27,6 @@ public class PlayerMotor : MonoBehaviour
     /// </summary>
 	void FixedUpdate ()
     {
-        rb.AddForce(new Vector3(playerMotor.Velocity, 0, 0) * Time.deltaTime, ForceMode2D.Impulse);
+        rb.AddForce(new Vector2(playerMotor.Velocity, 0) * Time.deltaTime, ForceMode2D.Impulse);
 	}
 }
