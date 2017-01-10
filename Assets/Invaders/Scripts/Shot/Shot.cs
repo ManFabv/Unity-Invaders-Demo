@@ -20,7 +20,6 @@ public class Shot : MonoBehaviour {
     /// <summary>
     /// 
     /// </summary>
-    [SerializeField]
     private Rigidbody2D rb;
 
     private float Acceleration

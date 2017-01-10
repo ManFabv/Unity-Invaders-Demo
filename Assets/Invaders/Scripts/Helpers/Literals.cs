@@ -3,6 +3,11 @@
     protected Literals() { } //para que no pueda ser instanciada la clase
 
     /// <summary>
+    /// Referencia al layer de las armas de los enemigos
+    /// </summary>
+    public static readonly string tagEnemyShot = "EnemyShot";
+
+    /// <summary>
     /// Referencia al layer de las armas del jugador
     /// </summary>
     public static readonly string tagPlayerShot = "PlayerShot";

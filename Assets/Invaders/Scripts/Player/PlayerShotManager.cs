@@ -72,15 +72,12 @@ public class PlayerShotManager : MonoBehaviour {
     {
         canShot = false;
 
-        if (shotModel != null)
-        {
-            GameObject go = Instantiate(shotModel) as GameObject;
+        GameObject go = ObjectPooler.Instance.GetPooledObject(Literals.tagPlayerShot);
 
-            Shot shot = go.GetComponent<Shot>();
+        Shot shot = go.GetComponent<Shot>();
 
-            if (shot != null)
-                shot.IniciarDisparo(shotAcceleration, shotBarrelPoint.position);
-        }
+        if (shot != null)
+            shot.IniciarDisparo(shotAcceleration, shotBarrelPoint.position);
 
         yield return new WaitForSeconds(timeBetweenShots);
 
