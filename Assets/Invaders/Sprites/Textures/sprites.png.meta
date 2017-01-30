@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5b9bd09ef6d0b134785cb36281994169
-timeCreated: 1482796360
+timeCreated: 1485794924
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -15,7 +15,7 @@ TextureImporter:
     21300016: enemy_red_01
     21300018: enemy_yellow_01
     21300020: enemy_red_02
-    21300022: yellow_02
+    21300022: enemy_yellow_02
     21300024: player_shot
     21300026: enemy_blue_death
     21300028: enemy_red_death
@@ -288,7 +288,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: yellow_02
+      name: enemy_yellow_02
       rect:
         serializedVersion: 2
         x: 80

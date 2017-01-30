@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: White_Enemy
+  m_Controller: {fileID: 9100000, guid: a3152e3d5e2617e47871473bcd905ec9, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 2e1ff656ce97e8042899e746d6ccb24e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0b481905e167e2749a56dcc779884350, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 21bfa47b16633424b834b58021ffe561, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ce77e4767bacee3458ad977026ec0f1e, type: 2}
