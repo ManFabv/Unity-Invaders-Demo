@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4073076119221222}
   - component: {fileID: 114306479798587028}
   - component: {fileID: 114344597948542102}
+  - component: {fileID: 114165716654755560}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,6 +42,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114165716654755560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265843310705572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc082aefda0273646b44f2bb85e1dcba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cantColumnasEnemigos: 6
+  cantFilasEnemigos: 6
+  tiposDeEnemigos:
+  - {fileID: 1010356298084760, guid: dd9f858608945084cae6f6fa458a93f5, type: 2}
+  - {fileID: 1928704915434434, guid: ec39becf5faa1e44d9636bee4ba3a982, type: 2}
+  - {fileID: 1598401429451200, guid: 276fc5d07282c5143830142d5c19e80f, type: 2}
+  - {fileID: 1167594684752440, guid: f800415a703b0304fbb25fa983bb2793, type: 2}
+  - {fileID: 1814492945182592, guid: ab4c60d68d76d564ab3c264562641046, type: 2}
 --- !u!114 &114306479798587028
 MonoBehaviour:
   m_ObjectHideFlags: 1

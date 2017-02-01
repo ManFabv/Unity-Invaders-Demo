@@ -5,6 +5,16 @@
     /// <summary>
     /// 
     /// </summary>
+    public static readonly string tagGameArea = "GameArea";
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public static readonly string tagEnemyManager = "GameManager";
+
+    /// <summary>
+    /// 
+    /// </summary>
     public static readonly string tagEnemy = "Enemy";
 
     /// <summary>
